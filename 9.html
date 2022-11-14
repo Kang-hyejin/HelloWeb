@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>book 객체 만들기</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h3>book 객체 만들기</h3>
+        <hr>
+        <script>
+            let account =new Object();
+            account.title="HTML5";
+            account.author="황기태";
+            account.price=20000;
+
+            let account2={
+                title : "HTML5",
+                author:"황기태",
+                price:20000,
+            }
+
+            function Account(title,author,price)
+            {
+                this.title=title;
+                this.author=author;
+                this.price=price;
+            }
+            let account3=new Account("HTML5","황기태",20000);
+
+            document.write("book : "+account.title+", "+account.author+", "+account.price+"<br>");
+            document.write("book : "+account2.title+", "+account2.author+", "+account2.price+"<br>");
+            document.write("book : "+account3.title+", "+account3.author+", "+account3.price+"<br>");
+        </script>
+    </body>
+</html>
